@@ -32,4 +32,5 @@ Route::get('/ask', function () {
 
 
 Route::get("users",[user::class,'index']);
-Route::get("hello/{name}",[UsersController::class,'loadViews']);
+
+Route::get("hello",[UsersController::class,'loadViews']);
