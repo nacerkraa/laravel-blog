@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\user;
+use App\Http\Controllers\UsersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,8 +30,6 @@ Route::get('/ask', function () {
     return view('questions');
 });
 
-Route::get('/hello/{name}', function ($name) {
-    return view('Hello',["name"=>$name]);
-});
 
 Route::get("users",[user::class,'index']);
+Route::get("hello/{name}",[UsersController::class,'loadViews']);
