@@ -29,4 +29,8 @@ Route::get('/ask', function () {
     return view('questions');
 });
 
+Route::get('/hello/{name}', function ($name) {
+    return view('Hello',["name"=>$name]);
+});
+
 Route::get("users",[user::class,'index']);
