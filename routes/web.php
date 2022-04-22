@@ -21,12 +21,12 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/articles', function () {
+    return view('articles');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/ask', function () {
+    return view('questions');
 });
 
 Route::get("users",[user::class,'index']);
