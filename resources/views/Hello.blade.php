@@ -1,8 +1,6 @@
 <x-header data="Hello Component Header"/>
 
 
-@if($name == 'nacer') 
-    <h3>Hello {{$name}} you are the admin</h3>   
-@else
-      <td> Guest </td>   
-@endif
+@for($i=0;$i<10;$i++)
+<h3>{{ $i }}</h3>
+@endfor
