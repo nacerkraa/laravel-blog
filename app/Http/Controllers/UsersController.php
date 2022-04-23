@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    public function loadViews(){
-        $data=['ahmed','raouf','jakop','sara'];
-        return view('Hello',['item' => $data]);
+    public function getData(Request $req){
+        $data = $req -> input();
+        return "Hello " . $data['user'] . ", your password is: ". $data['password'];
     }
 }

@@ -31,6 +31,5 @@ Route::get('/ask', function () {
 });
 
 
-Route::get("users",[user::class,'index']);
-
-Route::get("hello",[UsersController::class,'loadViews']);
+Route::post("users",[UsersController::class,'getData']);
+Route::view('login', 'form');
