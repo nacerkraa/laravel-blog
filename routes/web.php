@@ -33,3 +33,4 @@ Route::get('/ask', function () {
 
 Route::post("users",[UsersController::class,'getData']);
 Route::view('login', 'form');
+Route::view('noaccess', 'noaccess');
