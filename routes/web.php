@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\user;
-use App\Http\Controllers\UsersController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,22 +14,5 @@ use App\Http\Controllers\UsersController;
 */
 
 Route::get('/', function () {
-    return redirect('home');
+    return view('welcome');
 });
-
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::get('/articles', function () {
-    return view('articles');
-});
-
-Route::get('/ask', function () {
-    return view('questions');
-});
-
-
-Route::post("users",[UsersController::class,'getData']);
-Route::view('login', 'form');
-Route::view('noaccess', 'noaccess');
