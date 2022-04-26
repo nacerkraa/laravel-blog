@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\memberController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +18,7 @@ Route::get('/', function () {
 });
 
 Route::view('home', 'home');
+Route::view('add', 'addmember');
+Route::post('add', [memberController::class,'addData']);
 
 
