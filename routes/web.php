@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\memberController;
+
+use App\Http\Controllers\TestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,5 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/too', [App\Http\Controllers\TestController::class, 'too'])->name('home');
+Route::get('/foo', [App\Http\Controllers\TestController::class, 'foo'])->name('home');
