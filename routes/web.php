@@ -17,8 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('home', 'home');
-Route::view('add', 'addmember');
-Route::post('add', [memberController::class,'addData']);
 
 
