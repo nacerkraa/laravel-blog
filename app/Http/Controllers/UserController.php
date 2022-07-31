@@ -9,4 +9,15 @@ class UserController extends Controller
     {
         return view('home');
     }
+
+    public function show($id)
+    {
+        $id = $id;
+        return view('posts')-> with("id", $id);
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }
