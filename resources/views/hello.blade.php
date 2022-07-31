@@ -8,6 +8,7 @@
 </head>
 <body>
     <h2>Hello world!</h2>
-    <p>{{$title}}</p>
+    <p>{{$title1}}</p>
+    <p>{{$title2}}</p>
 </body>
 </html>
