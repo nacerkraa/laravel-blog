@@ -8,6 +8,6 @@
 </head>
 <body>
     <h2>This contact page</h2>
-    <p>The id is</p>
+   
 </body>
 </html>
