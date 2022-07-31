@@ -8,6 +8,6 @@ class UserController extends Controller
     public function index()
     {
         $title = "The title of this blog";
-        return view('hello', compact('title'));
+        return view('hello') -> with('title',$title);
     }
 }
