@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController;
 // Route::get('/user', 'App\Http\Controllers\UserController@index'); # un deuxéme method
 
 
-Route::get('/', [UserController::class, 'index'])-> name("Home");
+Route::get('/', [UserController::class, 'index'])-> name("home");
 Route::get('/post/{id}', [UserController::class, 'show'])-> whereNumber('id');
 Route::get('/contact', [UserController::class, 'contact'])-> name("contact");
 
