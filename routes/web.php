@@ -14,15 +14,14 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/user', [UserController::class, 'index']);
 // Route::get('/user', 'App\Http\Controllers\UserController@index'); # un deuxéme method
 
-Route::get('/posts', function () {
-    return view('posts');
-});
+
+Route::get('/', [UserController::class, 'index']);
+Route::get('/post/{id}', [UserController::class, 'show']);
+Route::get('/contact', [UserController::class, 'contact']);
+
+
+
+
 

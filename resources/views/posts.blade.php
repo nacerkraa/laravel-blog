@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Article list</title>
+    <title>Article Detail</title>
 </head>
 <body>
-    <h2>This article list</h2>
+    <h2>Article Detail</h2>
 </body>
 </html>
