@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 Route::get('/user', [UserController::class, 'index']);
 
+Route::get('/posts', function () {
+    return view('posts');
+});
+
