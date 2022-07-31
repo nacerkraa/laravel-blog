@@ -7,6 +7,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('hello');
+        $title = "The title of this blog";
+        return view('hello', compact('title'));
     }
 }
