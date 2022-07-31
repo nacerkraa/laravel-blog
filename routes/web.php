@@ -18,7 +18,7 @@ use App\Http\Controllers\UserController;
 
 
 Route::get('/', [UserController::class, 'index']);
-Route::get('/post/{id}', [UserController::class, 'show']);
+Route::get('/post/{id}', [UserController::class, 'show'])-> whereNumber('id');
 Route::get('/contact', [UserController::class, 'contact']);
 
 
