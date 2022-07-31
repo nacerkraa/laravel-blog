@@ -8,7 +8,8 @@
 </head>
 <body>
     <h2>Hello world!</h2>
-    <p>{{$title1}}</p>
-    <p>{{$title2}}</p>
+    @foreach ($titles as $title)
+        <p>{{$title}}</p>
+    @endforeach
 </body>
 </html>

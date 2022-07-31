@@ -14,6 +14,6 @@ class UserController extends Controller
             'title2' => "The second title of this blog"
         ];
 
-        return view('hello', $titles);
+        return view('hello') -> with('titles', $titles);
     }
 }
