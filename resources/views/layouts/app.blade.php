@@ -10,8 +10,12 @@
 </head>
 <body>
     @include('components.navbar')
-    @yield('content')
-    @include('components.footer')
+    <div class="container">
+        @yield('content')
+        @include('components.footer')
+    </div>
+    
+    
     <script src={{asset('js/app.js')}}></script>
 </body>
 </html>

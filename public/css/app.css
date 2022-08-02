@@ -1,3 +1,35 @@
-body{
-    background-color: aquamarine;
+* {
+    list-style: none;
+    text-decoration: none;
+    
 }
+
+.navbar a {
+   color: rgb(212, 211, 206);
+}
+
+li{
+    display: inline;
+}
+
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #b2b2b2;
+}
+
+.container{
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.navbar{
+    background-color: cadetblue;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
