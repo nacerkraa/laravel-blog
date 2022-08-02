@@ -3,7 +3,10 @@
     <h2>List of pages</h2>
 
     @foreach ($posts as $post)
-        <p>{{$post}}</p>
+    <ul>
+        <li>{{$post}}</li>
+    </ul>
+        
     @endforeach    
 @endsection
 
