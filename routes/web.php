@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +12,7 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/user', 'App\Http\Controllers\UserController@index'); # un deuxéme method
 
-
-Route::get('/', [UserController::class, 'index'])-> name("home");
-Route::get('/post/{id}', [UserController::class, 'show'])-> whereNumber('id');
-Route::get('/contact', [UserController::class, 'contact'])-> name("contact");
-
-
-
-
-
+Route::get('/', function () {
+    return view('welcome');
+});
