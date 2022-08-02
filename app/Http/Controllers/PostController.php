@@ -8,11 +8,16 @@ class PostController extends Controller
 {
     public function index()
     {
-        return view('Home');
+        return view('home');
     }
 
     public function show()
     {
-        return view('Post');
+        return view('post');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }
