@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostControllersTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePostControllersTable extends Migration
      */
     public function up()
     {
-        Schema::create('post_controllers', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreatePostControllersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post_controllers');
+        Schema::dropIfExists('posts');
     }
 }
