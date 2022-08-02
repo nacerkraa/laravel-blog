@@ -1,5 +1,5 @@
 <ul>
-    <li><a href="#"></a>Home</li>
-    <li><a href="#"></a>Posts</li>
-    <li><a href="#"></a>Contact</li>
+    <li><a href="{{route('home')}}">Home</a></li>
+    <li><a href="/post">Posts</a></li>
+    <li><a href="{{route('contact')}}">Contact</a></li>
 </ul>
