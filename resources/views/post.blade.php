@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
-    <h2>List of pages</h2>
+    <h2>List Of Posts</h2>
 
     @foreach ($posts as $post)
     <ul>
-        <li>{{$post}}</li>
+        <li><a href="#">{{$post -> title}}</a></li>
     </ul>
         
     @endforeach    

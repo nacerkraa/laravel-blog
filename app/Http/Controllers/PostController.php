@@ -14,10 +14,12 @@ class PostController extends Controller
 
     public function show()
     {
-        $post = [
+        /*$post = [
             'hello',
             'nacer'
-        ];
+        ];*/
+        
+        $post = Post::all();
         
         return view('post',[
             'posts' => $post
