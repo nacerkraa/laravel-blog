@@ -4,7 +4,7 @@
     @if ($posts-> count() > 0)
         @foreach ($posts as $post)
             <ul>
-                <li><a href="#">{{$post -> title}}</a></li>
+                <li><a href="/post/{{$post->id}}">{{$post -> title}}</a></li>
             </ul>
         @endforeach        
     @else

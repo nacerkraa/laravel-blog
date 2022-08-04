@@ -29,10 +29,10 @@ class PostController extends Controller
     public function showPost($id)
     {
         
-        $post = $id;
+        $post = Post::where('id', $id)->get();
         
         return view('post',[
-            'posts' => $post
+            'post' => $post
         ]);
     }
 
