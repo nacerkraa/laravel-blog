@@ -29,8 +29,10 @@ class PostController extends Controller
     public function showPost($id)
     {
         
-        $post = Post::where('id', $id)->get();
-        
+        $post = Post::find($id);
+        /*
+         or $post = Post::findorfail($id);    When we need to use the show 404 not found for the id that not exsit.
+        */
         return view('post',[
             'post' => $post
         ]);
