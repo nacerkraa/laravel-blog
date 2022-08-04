@@ -21,6 +21,16 @@ class PostController extends Controller
         
         $post = Post::all();
         
+        return view('post-list',[
+            'posts' => $post
+        ]);
+    }
+
+    public function showPost($id)
+    {
+        
+        $post = $id;
+        
         return view('post',[
             'posts' => $post
         ]);

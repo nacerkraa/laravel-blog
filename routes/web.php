@@ -15,5 +15,6 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', [PostController::class,'index']) -> name("home");
-Route::get('/post', [PostController::class,'show']) -> name("post");
+Route::get('/posts', [PostController::class,'show']) -> name("post");
+Route::get('/post/{id}', [PostController::class,'showPost']) -> name("post.show");
 Route::get('/contact', [PostController::class,'contact']) -> name("contact");
