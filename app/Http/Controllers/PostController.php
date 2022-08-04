@@ -38,6 +38,11 @@ class PostController extends Controller
         ]);
     }
 
+    public function createPost()
+    {
+        return view('createPost');
+    }
+
     public function contact()
     {
         return view('contact');
