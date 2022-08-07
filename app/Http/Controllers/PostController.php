@@ -43,6 +43,11 @@ class PostController extends Controller
         return view('createPost');
     }
 
+    public function store(Request $request)
+    {
+        dd($request);
+    }
+
     public function contact()
     {
         return view('contact');
