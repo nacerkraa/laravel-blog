@@ -45,7 +45,7 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
+        returnv view('home');
     }
 
     public function contact()
