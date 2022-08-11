@@ -45,18 +45,20 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        /*Post::create([
-            'title' => $request -> title,
-            'content' => $request -> content
-        ]);*/
+        Post::create([
+            'title'   => $request->title,
+            'content' => $request->content,
+        ]);
+       dd("la post est crée");
+       return view('home');
 
-        $post = new Post();
+        /*$post = new Post();
         $post -> title = $request -> title;
         $post -> content = $request -> content;
-        $post -> save();
+        $post -> save();*/
+
+       
         
-        dd("la post est crée");
-        return view('home');
     }
 
     public function contact()
