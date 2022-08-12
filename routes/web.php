@@ -19,4 +19,6 @@ Route::get('/posts', [PostController::class,'show']) -> name("post");
 Route::get('/post/{id}', [PostController::class,'showPost']) -> name("post.show");
 Route::get('/posts/create', [PostController::class,'createPost']) -> name("post.create");
 Route::post('/posts/create', [PostController::class,'store']) -> name("post.store");
+Route::get('/comments', [PostController::class,'showComments']) -> name("comments");
+//Route::get('/comment/{id}', [PostController::class,'showComment']) -> name("comment.show");
 Route::get('/contact', [PostController::class,'contact']) -> name("contact");

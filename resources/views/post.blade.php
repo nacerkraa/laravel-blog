@@ -7,5 +7,9 @@
     @else
         <p>Sorry There Is No Post!</p>
     @endif
+
+    @foreach ($post -> comments as $comment)
+        <p>comment : {{$comment -> content}}</p>
+    @endforeach
 @endsection
 
