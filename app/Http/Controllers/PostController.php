@@ -62,8 +62,6 @@ class PostController extends Controller
     public function showComments()
     {
         $comment = Comment::all();
-
-        //dd($comment);
         
         return view('comment-list',[
             'comments' => $comment
