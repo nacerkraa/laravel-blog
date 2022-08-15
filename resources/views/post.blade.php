@@ -9,7 +9,7 @@
     @endif
 
     @foreach ($post -> comments as $comment)
-        <p>comment : {{$comment -> content}}</p>
+        <p>comment : {{$comment -> content}}</p> 
     @endforeach
 @endsection
 
