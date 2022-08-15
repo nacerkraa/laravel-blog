@@ -56,10 +56,7 @@ class PostController extends Controller
         /*$post = new Post();
         $post -> title = $request -> title;
         $post -> content = $request -> content;
-        $post -> save();*/
-
-       
-        
+        $post -> save();*/ 
     }
 
     public function showComments()
