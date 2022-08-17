@@ -14,7 +14,6 @@ li{
     padding: 0px 6px;
 }
 
-
 body{
     font-family: Verdana, Tahoma, sans-serif;
     background-color: #b2b2b2;
@@ -39,7 +38,8 @@ body{
 
 /* Start Footer Styling */
 .footer {
-    
+    color: white;
+    background-color: #0009;
 }
 /* End Footer Styling */
 
