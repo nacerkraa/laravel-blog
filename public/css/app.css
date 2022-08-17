@@ -3,12 +3,13 @@
     text-decoration: none;
 }
 
-.navbar a {
+.navbar a{
    color: rgb(212, 211, 206);
 }
 
 li{
     display: inline;
+    padding: 0px 6px;
 }
 
 
@@ -18,12 +19,12 @@ body{
 }
 
 .container{
-    width: 1000px;
+    width: 880px;
     margin: 10px auto;
 }
 
 .navbar{
-    background-color: cadetblue;
+    background-color: #e14040;
 }
 
 .navbar .container{
