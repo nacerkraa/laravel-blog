@@ -49,11 +49,45 @@ li{
 /* End Navbar Styling */
 
 /* start content styling */
-.list-posts{
-    
+.post-list{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.post-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #fafafa;
+}
+
+.post-preview:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 /* End Content styling*/
 
+/* start post details styling */
+
+
+.post-details h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 10px;
+  }
+  
+  .post-details div {
+    margin: 20px 0;
+  }
+  .post-details button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+/* End post details styling */
 
 /* Start Footer Styling */
 .footer {
