@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-/* default stayling */
-* {
+/* base styles */
+*{
+    margin: 0;
+    font-family: "Quicksand";
+    color: #333;
     list-style: none;
     text-decoration: none;
 }
+
 
 
 li{
@@ -11,27 +16,28 @@ li{
     padding: 0px 6px;
 }
 
-body{
-    font-family: Verdana, Tahoma, sans-serif;
-    background-color: #b2b2b2;
-}
+
 
 .container{
-    width: 880px;
+    max-width: 800px;
     margin: 10px auto;
 }
 /* Start Navbar Styling */
 .navbar{
-    background-color: #e14040;
+    background-color: #f1356d;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .navbar .brand {
     color: aliceblue;
 }
 
-.navbar a{
-    color: rgb(212, 211, 206);
- }
+.navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+  }
  
 
 .navbar .container{
@@ -46,8 +52,13 @@ body{
 
 /* Start Footer Styling */
 .footer {
-    color: white;
     background-color: #0009;
+}
+
+.footer .content{
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
 /* End Footer Styling */
 
