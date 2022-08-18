@@ -2,13 +2,13 @@
 @section('content')
     <div class="container">
         <div class="post-list">
-            <h2>List Of Posts</h2>
+            <h1>List Of Posts</h1>
             
                 @if ($posts-> count() > 0)
                     @foreach ($posts as $post)
                     <div class="post-preview">
                         <a href="/post/{{$post->id}}">
-                            <h1>{{$post -> title}}</h1>
+                            <h2>{{$post -> title}}</h2>
                             <p>{{$post -> title}}</p>
                         </a>
                     </div>
