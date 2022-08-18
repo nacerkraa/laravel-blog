@@ -5,9 +5,6 @@
     text-decoration: none;
 }
 
-.navbar a{
-   color: rgb(212, 211, 206);
-}
 
 li{
     display: inline;
@@ -28,6 +25,15 @@ body{
     background-color: #e14040;
 }
 
+.navbar .brand {
+    color: aliceblue;
+}
+
+.navbar a{
+    color: rgb(212, 211, 206);
+ }
+ 
+
 .navbar .container{
     display: flex;
     justify-content: space-between;
@@ -35,6 +41,8 @@ body{
 }
 
 /* End Navbar Styling */
+
+
 
 /* Start Footer Styling */
 .footer {
