@@ -10,10 +10,20 @@
                 <p>Sorry There Is No Post!</p>
             @endif
 
-            @foreach ($post -> comments as $comment)
+            <hr>
+            @forelse ($post -> tags as $tag)
+                <span>{{$tag -> name}} | </span>
+            @empty
+                <span>There Is No Tags!</span>
+            @endforelse
 
+            <hr>
+            @forelse ($post -> comments as $comment)
                 <p>comment : {{$comment -> content}}</p>
-            @endforeach
+            @empty
+                <p>There Is no comment!!</p>
+                
+            @endforelse
         </div>
     </div>
 @endsection
