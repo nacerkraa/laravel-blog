@@ -3,7 +3,6 @@
     <div class="container">
         <div class="post-list">
             <h1>List Of Posts</h1>
-            
                 @if ($posts-> count() > 0)
                     @foreach ($posts as $post)
                     <div class="post-preview">
@@ -16,8 +15,6 @@
                 @else
                     <span>There is no post</span>
                 @endif
-            
         </div>
-        
     </div>
 @endsection
