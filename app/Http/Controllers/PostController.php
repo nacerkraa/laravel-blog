@@ -10,6 +10,7 @@ class PostController extends Controller
 {
     public function index()
     {
+
         return view('home');
     }
 
@@ -70,6 +71,13 @@ class PostController extends Controller
 
     public function contact()
     {
+        return view('contact');
+    }
+
+    public function register()
+    {
+        $post = Post::find(11);
+        dd($post);
         return view('contact');
     }
 }
