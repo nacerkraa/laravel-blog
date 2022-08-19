@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Vedio;
 use App\Models\Comment;
 use Illuminate\Http\Request;
 
@@ -77,7 +78,15 @@ class PostController extends Controller
     public function register()
     {
         $post = Post::find(11);
-        dd($post);
-        return view('contact');
+        $vedio = Vedio::find(1);
+        $comment1 = new Comment(['content' => 'My first comment']);
+        $comment2 = new Comment(['content' => 'My second comment']);
+        $post -> comments()-> saveMany([
+            $comment1,
+            $comment2
+        ]);
+
+        $comment3 = new Comment(['content' => 'My third comment']);
+        $vedio -> comments() -> save($comment3);
     }
 }

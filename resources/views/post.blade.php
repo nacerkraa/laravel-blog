@@ -12,7 +12,7 @@
 
             <hr>
             @forelse ($post -> tags as $tag)
-                <span>{{$tag -> name}} | </span>
+                <span>{{$tag -> name}} </span>
             @empty
                 <span>There Is No Tags!</span>
             @endforelse
