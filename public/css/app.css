@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-/* base styles */
+/* Base styles */
 *{
-    margin: 0;
-    font-family: "Quicksand";
-    color: #333;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  list-style: none;
+  text-decoration: none;
 }
 
 
 
 li{
-    display: inline;
-    padding: 0px 6px;
+  display: inline;
+  padding: 0px 6px;
 }
 
 
 
 .container{
-    max-width: 800px;
-    margin: 10px auto;
+  max-width: 800px;
+  margin: 10px auto;
 }
 /* Start Navbar Styling */
 .navbar{
-    background-color: #f1356d;
-    margin: 0 auto;
-    padding: 5px;
+  background-color: #f1356d;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 .navbar .brand {
@@ -34,36 +34,36 @@ li{
 }
 
 .navbar a {
-    margin-left: 16px;
-    text-decoration: none;
-    padding: 6px;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
   }
  
 
 .navbar .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* End Navbar Styling */
 
 /* start content styling */
 .post-list{
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 .post-preview {
-    padding: 10px 16px;
-    margin: 20px 0;
-    border-bottom: 1px solid #fafafa;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
 }
 
 .post-preview:hover {
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 /* End Content styling*/
 
@@ -71,21 +71,22 @@ li{
 
 
 .post-details h2 {
-    font-size: 20px;
-    color: #f1356d;
-    margin-bottom: 10px;
-  }
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
   
-  .post-details div {
-    margin: 20px 0;
-  }
-  .post-details button {
-    background: #f1356d;
-    color: #fff;
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
+.post-details div {
+  margin: 20px 0;
+}
+
+.post-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
   }
 /* End post details styling */
 
@@ -118,23 +119,23 @@ li{
 }
 
 .create button {
-    background: #f1356d;
-    color: #fff;
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Start Footer Styling */
-.footer {
+.footer{
     background-color: rgba(0, 0, 0, 0.716);
 }
 
 .footer .content{
-    color: white;
-    text-align: center;
-    padding: 5px;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 /* End Footer Styling */
 
