@@ -18,12 +18,7 @@
             @endforelse
 
             <hr>
-            @forelse ($post -> comments as $comment)
-                <p>comment : {{$comment -> content}}</p>
-            @empty
-                <p>There Is no comment!!</p>
-                
-            @endforelse
+            
         </div>
     </div>
 @endsection
