@@ -16,8 +16,8 @@ class CommentFactory extends Factory
     {
         return [
             'content' => $this->faker-> sentence(),
-            'created_at' => now(),
-            'post_id'=> Post::all()->random()->id
+            'post_id'=> Post::all()->random()->id,
+            'created_at' => now()
 
         ];
     }

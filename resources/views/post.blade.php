@@ -18,6 +18,12 @@
             @endforelse
 
             <hr>
+            @forelse ($post -> comments as $comment)
+                <span>{{$comment -> content}} </span>
+            @empty
+                <span>There Is No Comments!</span>
+            @endforelse
+
             
         </div>
     </div>
