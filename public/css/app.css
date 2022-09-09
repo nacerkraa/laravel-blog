@@ -49,6 +49,11 @@ li{
 /* End Navbar Styling */
 
 /* start content styling */
+.post-list h2,.post-list h1{
+  color: #f1356d;
+
+}
+
 .post-list{
   max-width: 600px;
   margin: 40px auto;

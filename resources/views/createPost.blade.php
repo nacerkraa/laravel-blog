@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="create">
-            <h2>Adding new Post</h2>
+            <h2>Adding a New Post</h2>
             <form action="{{route('post.store')}}" method="post">
             @csrf
             <label>Post title:</label>
