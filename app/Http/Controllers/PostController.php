@@ -51,7 +51,7 @@ class PostController extends Controller
             'title'   => $request->title,
             'content' => $request->content,
         ]);
-       dd("la post est crée");
+      
        return view('home');
 
         /*$post = new Post();
