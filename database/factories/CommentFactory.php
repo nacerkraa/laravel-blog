@@ -18,7 +18,6 @@ class CommentFactory extends Factory
             'content' => $this->faker-> sentence(),
             'post_id'=> Post::all()->random()->id,
             'created_at' => now()
-
         ];
     }
 }
