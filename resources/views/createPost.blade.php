@@ -4,12 +4,18 @@
     <div class="container">
         <div class="create">
             <h2>Adding a New Post</h2>
-            <form action="{{route('post.store')}}" method="post">
+            <form action="{{route('post.store')}}" method="post" enctype="multipart/form-data">
+                
             @csrf
             <label>Post title:</label>
             <input type="text" name="title" id="">
+
             <label>Post content:</label>
             <textarea name="content" id="" cols="30" rows="10"></textarea>
+
+            <label for="avatar">Upload an Image</label>
+            <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
+
             <button type="submit">Create</button>
             </form>
             </div>
