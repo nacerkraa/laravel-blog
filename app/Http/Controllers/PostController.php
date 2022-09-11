@@ -47,14 +47,14 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        dd($request -> avatar -> store("images"));
+        //dd($request -> avatar -> store("images"));
 
         Post::create([
             'title'   => $request->title,
             'content' => $request->content,
         ]);
       
-       return view('home');
+       return redirect('posts');
 
         /*$post = new Post();
         $post -> title = $request -> title;
