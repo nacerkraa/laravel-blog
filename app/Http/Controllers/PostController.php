@@ -6,6 +6,7 @@ use App\Models\Post;
 use App\Models\Vedio;
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -47,10 +48,11 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        Storage::disk('local')-> put("avatar",$request->file("avatar"));
         //dd($request -> avatar -> store("images"));
-
+        die();
         $validated = $request->validate([
-            'title' => 'required|unique:posts|max:255| min:5',
+            'title' => 'required|unique:posts|max:255|min:5',
             'content' => 'required',
         ]);
 
