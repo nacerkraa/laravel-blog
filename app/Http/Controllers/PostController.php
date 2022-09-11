@@ -49,6 +49,11 @@ class PostController extends Controller
     {
         //dd($request -> avatar -> store("images"));
 
+        $validated = $request->validate([
+            'title' => 'required|unique:posts|max:255',
+            'content' => 'required',
+        ]);
+
         Post::create([
             'title'   => $request->title,
             'content' => $request->content,
