@@ -50,7 +50,7 @@ class PostController extends Controller
         //dd($request -> avatar -> store("images"));
 
         $validated = $request->validate([
-            'title' => 'required|unique:posts|max:255',
+            'title' => 'required|unique:posts|max:255| min:5',
             'content' => 'required',
         ]);
 
