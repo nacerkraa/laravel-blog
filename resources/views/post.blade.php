@@ -3,7 +3,7 @@
     <div class="container">
         <div class="post-details">
             <h1>Post Details</h1> 
-            <a href="/delete/{{$post->id}}">Delete</a>
+            <a href="javascript:openulr('/delete/{{$post->id}}')">Delete</a>
             <a href="/update/{{$post->id}}">Update</a>
             @if (!empty($post))
                 <h2>{{$post -> title}}</h2>
