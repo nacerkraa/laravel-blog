@@ -17,10 +17,6 @@ class PostController extends Controller
 
     public function show()
     {
-        /*$post = [
-            'hello',
-            'nacer'
-        ];*/
         
         $post = Post::all();
         
@@ -49,7 +45,6 @@ class PostController extends Controller
     public function store(Request $request)
     {
         Storage::disk('local')-> put("avatar",$request->file("avatar"));
-        //dd($request -> avatar -> store("images"));
         die();
         $validated = $request->validate([
             'title' => 'required|unique:posts|max:255|min:5',
@@ -63,10 +58,6 @@ class PostController extends Controller
       
        return redirect('posts');
 
-        /*$post = new Post();
-        $post -> title = $request -> title;
-        $post -> content = $request -> content;
-        $post -> save();*/
     }
 
     public function showComments()
@@ -76,6 +67,13 @@ class PostController extends Controller
         return view('comment-list',[
             'comments' => $comment
         ]);
+    }
+
+    public function deletePost($id)
+    {
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('posts');
     }
 
     public function contact()
