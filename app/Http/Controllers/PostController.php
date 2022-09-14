@@ -37,6 +37,33 @@ class PostController extends Controller
         ]);
     }
 
+    public function deletePost($id)
+    {
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('posts');
+    }
+
+    public function getPost($id)
+    {
+        $post = Post::find($id);
+        return view('updatePost',[
+            'post' => $post
+        ]);
+    }
+
+    public function updatePost(Request $request)
+    {
+        //dd($request-> content);
+        $post = Post::find($request->id);
+ 
+        $post->title = $request->title;
+        $post->content = $request->content;
+ 
+        $post->save();
+        return redirect('posts');
+    }
+
     public function createPost()
     {
         return view('createPost');
@@ -69,12 +96,7 @@ class PostController extends Controller
         ]);
     }
 
-    public function deletePost($id)
-    {
-        $post = Post::find($id);
-        $post->delete();
-        return redirect('posts');
-    }
+    
 
     public function contact()
     {

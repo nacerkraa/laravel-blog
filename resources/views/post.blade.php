@@ -4,7 +4,7 @@
         <div class="post-details">
             <h1>Post Details</h1> 
             <a href="/delete/{{$post->id}}">Delete</a>
-            <a href="/Update/{{$post->id}}">Update</a>
+            <a href="/update/{{$post->id}}">Update</a>
             @if (!empty($post))
                 <h2>{{$post -> title}}</h2>
                 <p>{{$post -> content}}</p>
